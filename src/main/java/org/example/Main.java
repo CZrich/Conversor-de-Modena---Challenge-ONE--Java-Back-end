@@ -1,7 +1,9 @@
 package org.example;
 
 import api.Service;
+import ui.UserInterface;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -11,12 +13,16 @@ public class Main {
 
         //System.out.println("Hello world!");
         // Setting URL
-        String url_str = "https://v6.exchangerate-api.com/v6/"+api_key+"/codes";
+       /* String url_str = "https://v6.exchangerate-api.com/v6/"+api_key+"/codes";
 
        ArrayList<String> code= Service.getSupportedCodes();
         System.out.println(code);
         double rate=Service.getRateConvertion("USD","PEN");
-        System.out.println("rate is:"+rate);
+        System.out.println("rate is:"+rate);*/
+        SwingUtilities.invokeLater(() -> {
+            UserInterface ui = new UserInterface();
+            ui.setVisible(true);
+        });
 
 
     }
