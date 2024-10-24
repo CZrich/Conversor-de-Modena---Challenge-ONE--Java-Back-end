@@ -40,9 +40,13 @@ Clona el repositorio y navega al directorio del proyecto:
   ```bash
     mkdir conversor-moneda
     cd conversor-moneda
-    git clone https://github.com/CZrich/Conversor-de-Modena---Challenge-ONE--Java-Back-end.git
-    
+    git clone https://github.com/CZrich/Conversor-de-Modena---Challenge-ONE--Java-Back-end.git 
    ```
+Ubicarse en el directorio donde se encuentre el `pom.xml` y ejecutar el comando que genera el .jar de la aplicación.
+  ```bash
+    mvn package
+   ```
+
 ## Uso con archivo .jar
 
 También puedes ejecutar la aplicación directamente desde el archivo `.jar` que se encuentra en el directorio `target` después de compilar el proyecto, o descargarlo desde el repositorio.
