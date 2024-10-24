@@ -19,15 +19,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Service {
-    //private  HttpClient httpClient;
-    //private HttpRequest httpRequest;
 
     public static ArrayList<String> getSupportedCodes()  {
         String url="https://v6.exchangerate-api.com/v6/6b01bc1ff1fbfe893889c714/codes";
         ArrayList<String> codes = new ArrayList<>();
         try{
         HttpClient httpClient = HttpClient.newHttpClient();
-     HttpRequest httpRequest = HttpRequest.newBuilder()
+        HttpRequest httpRequest = HttpRequest.newBuilder()
               .uri(URI.create(url))
               .build();
         HttpResponse<String> response= httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
