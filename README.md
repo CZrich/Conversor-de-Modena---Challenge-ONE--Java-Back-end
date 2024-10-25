@@ -38,20 +38,25 @@ Para ejecutar la aplicación, es necesario tener instalado:
 Clona el repositorio y navega al directorio del proyecto:
 
   ```bash
-    mkdir conversor-moneda
-    cd conversor-moneda
-    git clone https://github.com/CZrich/Conversor-de-Modena---Challenge-ONE--Java-Back-end.git 
+  mkdir conversor-moneda
+  cd conversor-moneda
+  git clone https://github.com/CZrich/Conversor-de-Modena---Challenge-ONE--Java-Back-end.git 
    ```
 Ubicarse en el directorio donde se encuentre el `pom.xml` y ejecutar el comando que genera el .jar de la aplicación.
   ```bash
-    mvn package
+  mvn package
    ```
 
 ## Uso con archivo .jar
 
-También puedes ejecutar la aplicación directamente desde el archivo `.jar` que se encuentra en el directorio `target` después de compilar el proyecto, o descargarlo desde el repositorio.
+Una ves generado  el archivo `.jar`  se encuentrará en el directorio `target` después de compilar el proyecto,también puede descargarlo directamente del repositorio desde `Releases`.
 
 ### Ejecutar desde la terminal:
+Si  ha clonado el repositorio y  compilado para ejecutar use:
 ```bash
  java -jar target/ConversorMonedas-1.0-SNAPSHOT-jar-with-dependencies.jar 
-
+```
+Pero si lo descargo dese `Releases` el archivo `.jar` debe ubircarse en la carpeta donde descargo y ejecutar el siguiente comando:
+```bash
+ java -jar ConversorMonedas-1.0-SNAPSHOT-jar-with-dependencies.jar 
+```
