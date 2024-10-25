@@ -42,7 +42,7 @@ Clona el repositorio y navega al directorio del proyecto:
   cd conversor-moneda
   git clone https://github.com/CZrich/Conversor-de-Modena---Challenge-ONE--Java-Back-end.git 
    ```
-Ubicarse en el directorio donde se encuentre el `pom.xml` y ejecutar el comando que genera el .jar de la aplicación.
+Ubicarse en el directorio donde se encuentre el `pom.xml` y ejecutar el comando que genera el `.jar` de la aplicación.
   ```bash
   mvn package
    ```
